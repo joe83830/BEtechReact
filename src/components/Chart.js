@@ -24,7 +24,7 @@ class Chart extends Component{
                 <Bar
                     data={this.state.chartData}
                     options={{
-                        maintainAspectRatio : false,
+                        // maintainAspectRatio : false,
                         title: {
                             display: this.props.displayTitle,
                             text: "You v.s. Average American Coffee Spending/week",

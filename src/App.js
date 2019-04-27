@@ -3,7 +3,7 @@ import './App.css';
 import Chart from './components/Chart';
 import NavBar from './components/NavBar';
 import LineChart from './components/Line';
-// import Form from './components/form';
+import Form from './components/form';
 
 class App extends Component{
 
@@ -131,13 +131,13 @@ class App extends Component{
         console.log(this.state.savingsGoal);
     }
 
-    // componentDidUpdate(prevProps, prevState) {
-    //     console.log(
-    //         `this.state.clickCounts(♻️ componentDidUpdate)`,
-    //
-    //         "UPDATED TO" + this.state.savingsGoal
-    //     );
-    // }
+    componentDidUpdate(prevProps, prevState) {
+        console.log(
+            `this.state.clickCounts(♻️ componentDidUpdate)`,
+
+            "UPDATED TO" + this.state.savingsGoal
+        );
+    }
 
     render() {
         // console.log(this.state.lineData)
@@ -146,12 +146,12 @@ class App extends Component{
         return (
             <div className="App">
                 {/*<header className="App-header">*/}
-                    {/*<img src={logo} className="App-logo" alt="logo" />*/}
+                {/*<img src={logo} className="App-logo" alt="logo" />*/}
                 {/*</header>*/}
                 <NavBar/>
                 {/*<Form2/>*/}
                 {/*<input type = "text" value = {this.state.savingsGoal}*/}
-                       {/*onChange = {this.updateSavingsGoal} />*/}
+                {/*onChange = {this.updateSavingsGoal} />*/}
 
                 <form onSubmit={this.updateSavingsGoal}>
                     <label>SavingsGoal  </label>
@@ -160,6 +160,7 @@ class App extends Component{
                 </form>
 
                 <h4>{this.state.savingsGoal}</h4>
+
                 <LineChart lineData={this.state.lineData}/>
                 <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition={"bottom"}/>
             </div>
