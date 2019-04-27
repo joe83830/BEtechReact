@@ -25,14 +25,14 @@ class LineChart extends Component{
                 <Line
                     data={this.state.lineData}
                     options={{
-                        maintainAspectRatio : false,
+                        // maintainAspectRatio : false,
                         responsive: true,
                         hoverMode: 'index',
                         stacked: false,
                         title: {
                             display: true,
-                            text: "CI Worked",
-                            // text: 'You v.s. Your Savings Goal',
+
+                            text: 'You v.s. Your Savings Goal',
                             fontSize: 30
 
                         },
