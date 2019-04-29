@@ -8,7 +8,8 @@ class LineChart extends Component{
         this.state = {
             lineData: props.lineData
         }
-        // console.log(this.state.lineData)
+        console.log("In Line now");
+        console.log(this.state.lineData)
     }
 
     // static defaultProps = {
@@ -23,7 +24,7 @@ class LineChart extends Component{
         return (
             <div className="lineChart">
                 <Line
-                    data={this.state.lineData}
+                    data={this.props.lineData}
                     options={{
                         // maintainAspectRatio : false,
                         responsive: true,

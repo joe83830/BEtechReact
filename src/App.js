@@ -126,23 +126,24 @@ class App extends Component{
                     ],
                     yAxis: 'y-axis-2'
                 }]
-            }}, () => {console.log("WHAT THE FUCK")});
+            }}, () => {console.log("WHAT THE FUCK " + this.state.savingsGoal)});
+        e.preventDefault();
         console.log("SAVINGS GOAL UPDATED");
-        console.log(this.state.savingsGoal);
+        console.log("Here's the new goal" + this.state.savingsGoal);
     }
 
     componentDidUpdate(prevProps, prevState) {
         console.log(
             `this.state.clickCounts(♻️ componentDidUpdate)`,
 
-            "UPDATED TO" + this.state.savingsGoal
+            "UPDATED TO " + this.state.savingsGoal
         );
     }
 
     render() {
         // console.log(this.state.lineData)
         // console.log(this.state.savingsGoal)
-        console.log(this.state.savingsGoal);
+        console.log("In App.js render " + this.state.savingsGoal);
         return (
             <div className="App">
                 {/*<header className="App-header">*/}
