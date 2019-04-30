@@ -101,13 +101,13 @@ class App extends Component{
                     backgroundColor: 'rgba(255, 99, 132, 0.6)',
                     fill: false,
                     data: [
-                        e.target[0].value,
-                        e.target[0].value,
-                        12,
-                        16,
-                        20,
-                        24,
-                        28
+                        (e.target[0].value / 7),
+                        (e.target[0].value / 7) * 2,
+                        (e.target[0].value / 7) * 3,
+                        (e.target[0].value / 7) * 4,
+                        (e.target[0].value / 7) * 5,
+                        (e.target[0].value / 7) * 6,
+                        (e.target[0].value / 7) * 7
                     ],
                     yAxis: 'y-axis-1',
                 }, {
@@ -118,11 +118,11 @@ class App extends Component{
                     data: [
                         0,
                         0,
-                        4,
-                        8,
-                        8,
-                        8,
-                        12
+                        4
+                        // 8,
+                        // 8,
+                        // 8,
+                        // 12
                     ],
                     yAxis: 'y-axis-2'
                 }]

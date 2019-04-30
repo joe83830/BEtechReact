@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <nav className="navbar navbar-dark bg-primary fixed-top">
             <Link className="navbar-brand" to="/">
-                BEtech Personal Spending Habits
+                The Dollar Save Club
 
             </Link>
         </nav>
